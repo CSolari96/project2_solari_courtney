@@ -223,8 +223,13 @@ a.cta:link, a.cta:visited {
 	padding-bottom: 2%;
 }
 
+.work-category {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .portfolio figure {
-	width: 90%;
+	/*width: 90%;*/
 	margin: 5% auto;
 }
 
