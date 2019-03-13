@@ -217,6 +217,31 @@ a.cta:link, a.cta:visited {
 }
 /* End Landing Page Content */
 
+/* Portfolio Page Content */
+.portfolio h2 {
+	border-bottom: 2px #00a0e0 solid;
+	padding-bottom: 2%;
+}
+
+.portfolio figure {
+	width: 90%;
+	margin: 5% auto;
+}
+
+.portfolio img {
+	width: 100%;
+	max-width: 300px;
+	border: 2px #0a313f solid;
+	-webkit- border-radius: 5px;
+	border-radius: 5px;
+}
+
+.portfolio figcaption {
+	font-size: 0.75rem;
+	color: #d30d52;
+}
+/* End Portfolio Page Content */
+
 /* About Page Content */
 .skills-section {
 	width: 95%;
