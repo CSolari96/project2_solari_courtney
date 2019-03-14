@@ -213,7 +213,7 @@ a.cta:link, a.cta:visited {
 }
 
 .sm-landing .sm-icons:hover, a.cta:hover, a.cta:active {
-	filter: drop-shadow(0 5px 10px #00a0e0);
+	filter: drop-shadow(0 0 10px #00a0e0);
 }
 /* End Landing Page Content */
 
@@ -223,22 +223,31 @@ a.cta:link, a.cta:visited {
 	padding-bottom: 2%;
 }
 
+.portfolio section {
+	margin-top: 5%;
+}
+
 .work-category {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center
 }
 
 .portfolio figure {
-	/*width: 90%;*/
-	margin: 5% auto;
+	margin: 3%;
 }
 
 .portfolio img {
 	width: 100%;
-	max-width: 300px;
+	max-width: 210px;
 	border: 2px #0a313f solid;
 	-webkit- border-radius: 5px;
 	border-radius: 5px;
+}
+
+/* Remove and add .cta class if making links to seperate pages */
+.portfolio img:hover {
+	filter: drop-shadow(0 0 10px #00a0e0);
 }
 
 .portfolio figcaption {
@@ -329,6 +338,7 @@ figcaption {
 	font-size: .65rem;
 	text-align: center;
 	padding: 1% 0;
+	max-width: 210px;
 }
 /* End About Page Content */
 
@@ -380,7 +390,7 @@ footer p {
 		margin-left: 2%;
 	}
 
-	h1 {
+	.home h1, .about h1 {
 		text-align: left;
 	}
 
@@ -401,6 +411,25 @@ footer p {
 @media (min-width: 740px) {
 	html {
 		font-size: 20px;
+	}
+
+	.portfolio section {
+		display: flex;
+	}
+
+	.portfolio h2 {
+		flex-basis: 160px;
+		border-bottom: 0;
+		border-right: 2px #00a0e0 solid;
+		padding-left: 5%;
+		padding-right: 2%;
+		text-align: right;
+		margin-right: 5%;
+	}
+
+	.portfolio .work-category {
+		justify-content: flex-start;
+		flex-grow: 1;
 	}
 }
 /* End 740 Media Query */
