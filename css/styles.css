@@ -418,10 +418,14 @@ footer p {
 
 /* End Footer */
 
-/* Start 605 Media Query */
-@media (min-width: 605px) {
+/* Start 625 Media Query */
+@media (min-width: 625px) {
 	html {
 		font-size: 18px;
+	}
+
+	h1 {
+		text-align: left;
 	}
 
 	.headshot {
@@ -438,8 +442,8 @@ footer p {
 		margin-left: 2%;
 	}
 
-	.home h1, .about h1 {
-		text-align: left;
+	.portfolio h1 {
+		text-align: center;
 	}
 
 	.about aside {
@@ -453,7 +457,7 @@ footer p {
 	}
 
 }
-/* End 605 Media Query */
+/* End 625 Media Query */
 
 /* Start 740 Media Query */
 @media (min-width: 740px) {
