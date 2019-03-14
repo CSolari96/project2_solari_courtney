@@ -196,7 +196,7 @@ p {
 }
 
 /* Call-to-Action Link */
-a.cta:link, a.cta:visited {
+a.cta:link, a.cta:visited, form button {
 	background-color: #ffffff;
 	color: #1776a1;
 	font-weight: 700;
@@ -382,11 +382,58 @@ figcaption {
 /* End About Page Content */
 
 /* Contact Page Content */
+.contact {
+	text-align: center;
+	margin: 0 4%;
+}
+
+.contact p:first-of-type {
+	padding-top: 3%;
+}
+
+.contact a:link {
+	text-decoration: none;
+	color: #d30d52;
+}
+
+.contact a:hover, .contact a:visited {
+	color: #00a0e0;
+}
+
 input, textarea {
 	border: 1px #d1d6dc solid;
-	-webkit- border-radius: 10px;
-	border-radius: 10px;
+	-webkit- border-radius: 5px;
+	border-radius: 5px;
 	display: block;
+	width: 100%;
+	margin-bottom: 3%;
+	padding: 3% 2%;
+}
+
+textarea {
+	min-height: 120px;
+}
+
+input:focus, textarea:focus {
+	filter: drop-shadow(0 0 5px #00a0e0);
+}
+
+form button {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin: 7% auto;
+}
+
+form button:hover {
+	filter: drop-shadow(0 0 10px #00a0e0);
+}
+
+.contact img {
+	max-width: 500px;
+	width: 100%;
+	-webkit- border-radius: 35px 0;
+	border-radius: 35px 0;
+	box-shadow: 10px 10px #d30d52;
 }
 /* End Contact Page Content */
 
