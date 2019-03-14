@@ -113,6 +113,49 @@ header {
 .slideout-open .slideout-menu {
   display: block;
 }
+
+.toggle-button {
+	background:none;
+	position:absolute;
+	top:0;
+	right:0;
+	line-height:45px;
+	padding: 8%;
+	color:#0a313f;
+	border:0;
+	font-size:2rem;
+	font-weight:bold;
+	cursor:pointer;
+	outline:none;
+	z-index:10000000000000;
+}
+
+#menu {
+	background-color: #0a313f;
+}
+
+#menu ul li {
+	list-style-type: none;
+	text-align: center;
+	padding: 15%;
+}
+
+#menu ul li a:link, #menu ul li a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15% 20%;
+}
+
+#menu ul li:hover {
+	background-color: #ffffff;
+	border-left: 2px #d30d52 solid;
+}
+
+#menu ul li:hover a {
+	color: #0a313f;
+	font-weight: 500;
+}
 /* End Hamburger Menu */
 /* End Navigation */
 /* End Header and Nav Bar */
@@ -443,7 +486,7 @@ footer p {
 		width: 100%;
 	}
 
-	.menu, .hamburger, .cross {
+	.toggle-button {
 		display: none;
 	}
 
