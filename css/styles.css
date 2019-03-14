@@ -391,21 +391,33 @@ figcaption {
 	margin: 0 4%;
 }
 
+.contact img {
+	max-width: 1000px;
+	width: 100%;
+	-webkit- border-radius: 20px 0;
+	border-radius: 20px 0;
+	box-shadow: -10px 10px #d30d52;
+}
+
+.contact-methods {
+	margin-top: 5%;
+}
+
 .contact p:first-of-type {
 	padding-top: 3%;
 }
 
-.contact a:link {
+.contact a:link, .contact a:visited {
 	text-decoration: none;
 	color: #d30d52;
 }
 
-.contact a:hover, .contact a:visited {
+.contact a:hover {
 	color: #00a0e0;
 }
 
 input, textarea {
-	border: 1px #d1d6dc solid;
+	border: 2px #00a0e0 solid;
 	-webkit- border-radius: 5px;
 	border-radius: 5px;
 	display: block;
@@ -423,29 +435,17 @@ textarea {
 }
 
 input:focus, textarea:focus {
-	filter: drop-shadow(0 0 5px #00a0e0);
+	filter: drop-shadow(0 0 10px #00a0e0);
 }
 
 form button {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
-	margin: 7% auto;
+	margin: 5% auto;
 }
 
 form button:hover {
 	filter: drop-shadow(0 0 10px #00a0e0);
-}
-
-.fl-form .fl-has-focus input.fl-input {
-	border-color: #d1d6dc;
-}
-
-.contact img {
-	max-width: 500px;
-	width: 100%;
-	-webkit- border-radius: 35px 0;
-	border-radius: 35px 0;
-	box-shadow: 10px 10px #d30d52;
 }
 /* End Contact Page Content */
 
@@ -501,7 +501,7 @@ footer p {
 		margin-left: 2%;
 	}
 
-	.portfolio h1 {
+	.portfolio h1, .contact h1 {
 		text-align: center;
 	}
 
@@ -541,6 +541,29 @@ footer p {
 	.portfolio .work-category {
 		justify-content: flex-start;
 		flex-grow: 1;
+	}
+
+	.contact-methods {
+		display: flex;
+	}
+
+	.contact-info {
+		flex-basis: 350px;
+		flex-grow: 1;
+		text-align: left;
+		border-left: 2px #d30d52 solid;
+		padding-left: 2%;
+	}
+
+	.contact form {
+		flex-basis: 350px;
+		flex-grow: 1;
+		margin-right: 5%;
+		order: -1;
+	}
+
+	form button {
+		margin: 5% 0 5% auto;
 	}
 }
 /* End 740 Media Query */
