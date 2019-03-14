@@ -414,6 +414,7 @@ input, textarea {
 	padding: 3% 2%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 500;
+	color: #0a313f;
 }
 
 textarea {
@@ -433,6 +434,10 @@ form button {
 
 form button:hover {
 	filter: drop-shadow(0 0 10px #00a0e0);
+}
+
+.fl-form .fl-has-focus input.fl-input {
+	border-color: #d1d6dc;
 }
 
 .contact img {
