@@ -22,6 +22,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	color: #ffffff;
 }
 
+:focus {
+	outline: none;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -408,10 +412,13 @@ input, textarea {
 	width: 100%;
 	margin-bottom: 3%;
 	padding: 3% 2%;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
 }
 
 textarea {
 	min-height: 120px;
+	resize: vertical;
 }
 
 input:focus, textarea:focus {
