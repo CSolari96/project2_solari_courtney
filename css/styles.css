@@ -381,6 +381,15 @@ figcaption {
 }
 /* End About Page Content */
 
+/* Contact Page Content */
+input, textarea {
+	border: 1px #d1d6dc solid;
+	-webkit- border-radius: 10px;
+	border-radius: 10px;
+	display: block;
+}
+/* End Contact Page Content */
+
 /* Footer */
 footer {
 	background-color: #0a313f;
