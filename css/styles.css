@@ -297,6 +297,10 @@ a.cta:link, a.cta:visited, form button {
 	font-size: 0.75rem;
 	color: #d30d52;
 }
+
+.hidden {
+	display: none;
+}
 /* End Portfolio Page Content */
 
 /* About Page Content */
